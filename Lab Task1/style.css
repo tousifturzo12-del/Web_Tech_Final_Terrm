@@ -1,0 +1,216 @@
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    max-width: 750px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #8b4513;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Section */
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #8b4513;
+    border-bottom: 2px solid #f0a35e;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+/* Input, Select and Textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #e67e22;
+    box-shadow: 0 0 6px rgba(230, 126, 34, 0.4);
+}
+
+/* Radio Buttons */
+.radio-group {
+    display: flex;
+    gap: 25px;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+/* Food List */
+.food-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+/* Food Item */
+.food-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff8f0;
+    border: 1px solid #f0c095;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.food-item:hover {
+    background-color: #ffe8cc;
+    transform: translateY(-2px);
+}
+
+.food-item input {
+    margin-right: 8px;
+}
+
+.food-item span {
+    flex: 1;
+}
+
+.food-item strong {
+    color: #d35400;
+}
+
+/* Error Messages */
+.error {
+    display: block;
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+    min-height: 16px;
+}
+
+/* Button */
+.order-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e67e22;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #d35400;
+    transform: translateY(-2px);
+}
+
+/* Result */
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    background-color: #eafaf1;
+    border: 2px solid #27ae60;
+}
+
+.result h2 {
+    color: #27ae60;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.result p {
+    margin: 8px 0;
+}
+
+.result ul {
+    margin: 10px 0 10px 25px;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d35400;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .food-list {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+}
